@@ -1,0 +1,311 @@
+{
+  "stagione": "2026/27",
+  "fonte": "Calendario2026 Lega King e Coppa.xlsx, Proposta Finale (calendario, NON referti)",
+  "eventi": [
+    {
+      "id": "camp-01",
+      "competizione": "Campionato",
+      "turno": "1ª giornata",
+      "periodo": "12-14/09",
+      "anno": 2026,
+      "serieA": 4
+    },
+    {
+      "id": "super-04",
+      "competizione": "Supercoppa King",
+      "turno": "Finale SuperCoppa",
+      "periodo": "12-14/09",
+      "anno": 2026,
+      "serieA": 4
+    },
+    {
+      "id": "camp-02",
+      "competizione": "Campionato",
+      "turno": "2ª giornata",
+      "periodo": "18-20/09",
+      "anno": 2026,
+      "serieA": 5
+    },
+    {
+      "id": "camp-03",
+      "competizione": "Campionato",
+      "turno": "3ª giornata",
+      "periodo": "10-12/10",
+      "anno": 2026,
+      "serieA": 6
+    },
+    {
+      "id": "camp-04",
+      "competizione": "Campionato",
+      "turno": "4ª giornata",
+      "periodo": "16-19/10",
+      "anno": 2026,
+      "serieA": 7
+    },
+    {
+      "id": "camp-05",
+      "competizione": "Campionato",
+      "turno": "5ª giornata",
+      "periodo": "23-25/10",
+      "anno": 2026,
+      "serieA": 8
+    },
+    {
+      "id": "camp-06",
+      "competizione": "Campionato",
+      "turno": "6ª giornata",
+      "periodo": "27-29/10",
+      "anno": 2026,
+      "serieA": 9
+    },
+    {
+      "id": "cup-09",
+      "competizione": "Coppa King",
+      "turno": "1 turno a gironi A",
+      "periodo": "27-29/10",
+      "anno": 2026,
+      "serieA": 9
+    },
+    {
+      "id": "camp-07",
+      "competizione": "Campionato",
+      "turno": "7ª giornata",
+      "periodo": "31/10-02/11",
+      "anno": 2026,
+      "serieA": 10
+    },
+    {
+      "id": "camp-08",
+      "competizione": "Campionato",
+      "turno": "8ª giornata",
+      "periodo": "06-08/11",
+      "anno": 2026,
+      "serieA": 11
+    },
+    {
+      "id": "camp-09",
+      "competizione": "Campionato",
+      "turno": "9ª giornata",
+      "periodo": "21-23/11",
+      "anno": 2026,
+      "serieA": 12
+    },
+    {
+      "id": "camp-10",
+      "competizione": "Campionato",
+      "turno": "10ª giornata",
+      "periodo": "29/11",
+      "anno": 2026,
+      "serieA": 13
+    },
+    {
+      "id": "camp-11",
+      "competizione": "Campionato",
+      "turno": "11ª giornata",
+      "periodo": "06/12",
+      "anno": 2026,
+      "serieA": 14
+    },
+    {
+      "id": "cup-14",
+      "competizione": "Coppa King",
+      "turno": "2 turno a gironi A",
+      "periodo": "06/12",
+      "anno": 2026,
+      "serieA": 14
+    },
+    {
+      "id": "camp-12",
+      "competizione": "Campionato",
+      "turno": "12ª giornata",
+      "periodo": "13/12",
+      "anno": 2026,
+      "serieA": 15
+    },
+    {
+      "id": "camp-13",
+      "competizione": "Campionato",
+      "turno": "13ª giornata",
+      "periodo": "03/01",
+      "anno": 2027,
+      "serieA": 17
+    },
+    {
+      "id": "camp-14",
+      "competizione": "Campionato",
+      "turno": "14ª giornata",
+      "periodo": "06/01",
+      "anno": 2027,
+      "serieA": 18
+    },
+    {
+      "id": "camp-15",
+      "competizione": "Campionato",
+      "turno": "15ª giornata",
+      "periodo": "10/01",
+      "anno": 2027,
+      "serieA": 19
+    },
+    {
+      "id": "camp-16",
+      "competizione": "Campionato",
+      "turno": "16ª giornata",
+      "periodo": "17/01",
+      "anno": 2027,
+      "serieA": 20
+    },
+    {
+      "id": "cup-20",
+      "competizione": "Coppa King",
+      "turno": "3 turno a gironi A",
+      "periodo": "17/01",
+      "anno": 2027,
+      "serieA": 20
+    },
+    {
+      "id": "camp-17",
+      "competizione": "Campionato",
+      "turno": "17ª giornata",
+      "periodo": "24/01",
+      "anno": 2027,
+      "serieA": 21
+    },
+    {
+      "id": "camp-18",
+      "competizione": "Campionato",
+      "turno": "18ª giornata",
+      "periodo": "31/01",
+      "anno": 2027,
+      "serieA": 22
+    },
+    {
+      "id": "camp-19",
+      "competizione": "Campionato",
+      "turno": "19ª giornata",
+      "periodo": "07/02",
+      "anno": 2027,
+      "serieA": 23
+    },
+    {
+      "id": "camp-20",
+      "competizione": "Campionato",
+      "turno": "20ª giornata",
+      "periodo": "14/02",
+      "anno": 2027,
+      "serieA": 24
+    },
+    {
+      "id": "camp-21",
+      "competizione": "Campionato",
+      "turno": "21ª giornata",
+      "periodo": "21/02",
+      "anno": 2027,
+      "serieA": 25
+    },
+    {
+      "id": "camp-22",
+      "competizione": "Campionato",
+      "turno": "22ª giornata",
+      "periodo": "28/02",
+      "anno": 2027,
+      "serieA": 26
+    },
+    {
+      "id": "cup-26",
+      "competizione": "Coppa King",
+      "turno": "1 turno a gironi R",
+      "periodo": "28/02",
+      "anno": 2027,
+      "serieA": 26
+    },
+    {
+      "id": "camp-23",
+      "competizione": "Campionato",
+      "turno": "23ª giornata",
+      "periodo": "07/03",
+      "anno": 2027,
+      "serieA": 27
+    },
+    {
+      "id": "camp-24",
+      "competizione": "Campionato",
+      "turno": "24ª giornata",
+      "periodo": "14/03",
+      "anno": 2027,
+      "serieA": 28
+    },
+    {
+      "id": "camp-25",
+      "competizione": "Campionato",
+      "turno": "25ª giornata",
+      "periodo": "21/03",
+      "anno": 2027,
+      "serieA": 29
+    },
+    {
+      "id": "cup-29",
+      "competizione": "Coppa King",
+      "turno": "2 turno a gironi R",
+      "periodo": "21/03",
+      "anno": 2027,
+      "serieA": 29
+    },
+    {
+      "id": "camp-26",
+      "competizione": "Campionato",
+      "turno": "26ª giornata",
+      "periodo": "04/04",
+      "anno": 2027,
+      "serieA": 30
+    },
+    {
+      "id": "camp-27",
+      "competizione": "Campionato",
+      "turno": "27ª giornata",
+      "periodo": "11/04",
+      "anno": 2027,
+      "serieA": 31
+    },
+    {
+      "id": "camp-28",
+      "competizione": "Campionato",
+      "turno": "28ª giornata",
+      "periodo": "18/04",
+      "anno": 2027,
+      "serieA": 32
+    },
+    {
+      "id": "cup-32",
+      "competizione": "Coppa King",
+      "turno": "3 turno a gironi R",
+      "periodo": "18/04",
+      "anno": 2027,
+      "serieA": 32
+    },
+    {
+      "id": "cup-33",
+      "competizione": "Coppa King",
+      "turno": "Semifinale Andata",
+      "periodo": "25/04",
+      "anno": 2027,
+      "serieA": 33
+    },
+    {
+      "id": "cup-34",
+      "competizione": "Coppa King",
+      "turno": "Semifinale Ritorno",
+      "periodo": "02/05",
+      "anno": 2027,
+      "serieA": 34
+    },
+    {
+      "id": "cup-35",
+      "competizione": "Coppa King",
+      "turno": "Finale",
+      "periodo": "09/05",
+      "anno": 2027,
+      "serieA": 35
+    }
+  ],
+  "risultati": []
+}
