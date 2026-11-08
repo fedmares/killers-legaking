@@ -79,3 +79,25 @@ html{max-width:100%;overflow-x:clip}body{max-width:100%;overflow-x:clip}
 .trophy-europe-note p{margin:0;color:#dacde5;max-width:820px}
 @media(max-width:1000px){.uilf-leagues{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:690px){.networks-grid,.uilf-leagues,.trophy-europe-row{grid-template-columns:1fr}.club-networks{padding:25px 0}.network-card{padding:22px}.uilf-league-wrap{padding-bottom:48px}.uilf-region .europe-stage{padding:56px 0 24px}.footer-links{justify-content:flex-start;gap:15px}.trophy-europe-row{gap:15px}}
+
+/* Collection: bring the shirts into view without changing the homepage. */
+body[data-page="divise.html"] .page-intro{padding:44px 0 34px}
+body[data-page="divise.html"] .page-intro h1{font-size:clamp(40px,5.2vw,72px);letter-spacing:-1.5px;margin-bottom:16px}
+body[data-page="divise.html"] .kit-experience{padding-top:28px}
+.kit-selector button:focus-visible{outline:3px solid var(--gold);outline-offset:-4px}
+@media(max-width:700px){
+  body[data-page="divise.html"] .page-intro{padding:30px 0 24px}
+  body[data-page="divise.html"] .page-intro h1{font-size:clamp(34px,9vw,52px);letter-spacing:-1px}
+  body[data-page="divise.html"] .page-intro p{font-size:16px}
+  body[data-page="divise.html"] .kit-experience{padding-top:20px}
+  body[data-page="divise.html"] .kit-selector{margin-bottom:16px}
+  body[data-page="divise.html"] .kit-spec div{font-size:14px}
+}
+
+@media(max-width:400px){
+  .header-inner{gap:8px}
+  .brand{gap:7px}
+  .brand-mark{flex-basis:42px}
+  .league-brand-link{font-size:9px;letter-spacing:1px}
+  .menu-button{padding:10px!important;white-space:nowrap;flex-shrink:0}
+}

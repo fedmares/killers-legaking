@@ -2,7 +2,7 @@
 (()=>{
   const $=(id)=>document.getElementById(id);
   const menu=$('menu-button'),nav=$('main-nav');
-  if(menu&&nav){menu.addEventListener('click',()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(o));menu.textContent=o?'Chiudi ×':'Menu ☰';});document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu ☰';}});}
+  if(menu&&nav){menu.addEventListener('click',()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(o));menu.textContent=o?'Chiudi ×':'Menu ☰';});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){if(nav.contains(document.activeElement))menu.focus();nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu ☰';}});}
   if($('trophy-data')){
     const trophies=JSON.parse($('trophy-data').textContent);
     const exhibits=[...document.querySelectorAll('[data-exhibit]')];
@@ -27,8 +27,19 @@
     {src:'assets/kit_AWAY_giallo_viola.webp',name:'Oro. Viola.<br>Energia.',desc:'L’oro diventa protagonista. Pennellate diagonali viola e dettagli in contrasto rendono l’Away un progetto autonomo, non la Home a colori invertiti.',swatches:['#ebbd31','#4c1766','#edcd63'],board:'assets/home_away_board.webp',label:'Away'},
     {src:'assets/kit_THIRD_dark_cross.webp',name:'Dark Cross.<br>Un altro volto.',desc:'Nero profondo e croce strutturale viola/prugna, con dettagli lilla e soltanto sottili accenti oro. Una terza maglia di geometrie e carattere.',swatches:['#111019','#4a245d','#c3a5d9'],board:'assets/third_board_light.webp',label:'Dark Cross'}];
     let current=0;const buttons=[...document.querySelectorAll('[data-kit]')];
-    const show=(i)=>{current=i;let k=kits[i];buttons.forEach((b,j)=>{b.classList.toggle('active',j===i);b.setAttribute('aria-selected',String(j===i));});$('kit-photo').src=k.src;$('kit-photo').alt='Divisa Killers '+k.label;$('kit-name').innerHTML=k.name;$('kit-description').textContent=k.desc;$('kit-swatches').innerHTML=k.swatches.map(c=>`<i style="background:${c}"></i>`).join('');$('kit-zoom').setAttribute('aria-label','Ingrandisci la divisa '+k.label);};
-    buttons.forEach((b,i)=>b.addEventListener('click',()=>show(i)));
+    const show=(i)=>{current=i;let k=kits[i];buttons.forEach((b,j)=>{b.classList.toggle('active',j===i);b.setAttribute('aria-selected',String(j===i));b.tabIndex=j===i?0:-1;});$('kit-number').textContent=`DIVISA 0${i+1} / 2026–27`;$('kit-panel').setAttribute('aria-labelledby',buttons[i].id);$('kit-photo').src=k.src;$('kit-photo').alt='Divisa Killers '+k.label;$('kit-name').innerHTML=k.name;$('kit-description').textContent=k.desc;$('kit-swatches').innerHTML=k.swatches.map(c=>`<i style="background:${c}"></i>`).join('');$('kit-zoom').setAttribute('aria-label','Ingrandisci la divisa '+k.label);};
+    buttons.forEach((b,i)=>{
+      b.addEventListener('click',()=>show(i));
+      b.addEventListener('keydown',e=>{
+        let next;
+        if(e.key==='ArrowRight')next=(i+1)%buttons.length;
+        else if(e.key==='ArrowLeft')next=(i+buttons.length-1)%buttons.length;
+        else if(e.key==='Home')next=0;
+        else if(e.key==='End')next=buttons.length-1;
+        else return;
+        e.preventDefault();show(next);buttons[next].focus();
+      });
+    });
     $('kit-zoom').addEventListener('click',()=>openViewer(kits[current].src,'Divisa Killers '+kits[current].label));$('kit-board').addEventListener('click',()=>openViewer(kits[current].board,'Tavola dettagli '+kits[current].label));
   }
 })();
